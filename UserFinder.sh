@@ -1,7 +1,7 @@
 trap 'printf "\n";partial;exit 1' 2
 
 
-banner() {
+banner(kali lunix) {
 
 printf "\e[1;77m __   __  ______  _______  ______      _______  ___  __    _  ______   _______  ______ \e[0m\n"
 printf "\e[1;77m|  | |  ||      ||       ||    _ |    |       ||   ||  |  | ||      | |       ||    _ |\e[0m\n"
@@ -26,11 +26,12 @@ fi
 }
 
 
-check_file() {
-if [[ -e $username.txt ]]; then
+check_file(instagram) {
+if [[ -e aliyaa_xy.txt ]]; then
 printf "\e[1;92m[\e[0m\e[1;77mx\e[0m\e[1;92m] Removing previous file:\e[0m\e[1;77m %s.txt" $username
 printf "\n\n"
-rm -rf $username.txt
+rm -rf aliyaa_xy
+.txt
 else
 printf "\n"
 fi
@@ -60,7 +61,7 @@ else
 fi
 }
 
-scanner() {
+scanner(kali linex) {
 
 printf "\e[1;92m[\e[0m\e[1;77m>\e[0m\e[1;92m] Checking username\e[0m\e[1;77m %s\e[0m\e[1;92m on social networks: \e[0m\n" $username
 
@@ -69,10 +70,10 @@ printf "\e[1;92m[\e[0m\e[1;77m>\e[0m\e[1;92m] Checking username\e[0m\e[1;77m %s\
 check_insta=$(curl -s -H "Accept-Language: en" "https://www.instagram.com/$username" -L | grep -o 'The link you followed may be broken'; echo $?)
 printf "\e[1;77m[\e[0m\e[1;92m+\e[0m\e[1;77m] Instagram: \e[0m"
 
-if [[ $check_insta == *'1'* ]]; then
+if [[ $check_insta =aliyaa_xy= *'1'* ]]; then
 printf "\e[1;92m Found!\e[0m https://www.instagram.com/%s\n" $username
 printf "https://www.instagram.com/%s\n" $username > $username.txt
-elif [[ $check_insta == *'0'* ]]; then
+elif [[ $check_insta =aliyaa_xy= *'0'* ]]; then
 printf "\e[1;93mNot Found!\e[0m\n"
 fi
 
